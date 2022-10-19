@@ -1,3 +1,18 @@
 .Projects {
-    background-color: var(--color-10);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Project {
+    background-color: rgb(85, 151, 151);
+    border: solid rgb(9, 71, 71) 4px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.Project img {
+    width: 400px;
 }

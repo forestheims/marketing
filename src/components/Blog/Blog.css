@@ -1,3 +1,18 @@
 .Blog {
-    background-color: var(--color-4);
+    width: 100vw;
+}
+
+.Blog div {
+     display: flex;
+     flex-direction: row;
+     width: 300px;
+     gap: 10px;
+}
+
+.Blog a {
+    cursor: pointer;
+}
+
+.Blog a:hover {
+    color: rgb(255, 64, 207)
 }

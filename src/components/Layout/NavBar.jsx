@@ -16,7 +16,7 @@ export default function NavBar() {
       <NavLink to="projects">Projects</NavLink>
       <NavLink to="contact">Contact</NavLink>
       <button onClick={(e) => handleClick(e)}>
-        <img src="./images/5558220.png"></img>
+        <img src="/images/5558220.png"></img>
       </button>
     </header>
   );

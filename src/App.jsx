@@ -19,7 +19,7 @@ export default function App() {
           <Route path="blog" element={<Blog />}>
             <Route index element={<Browse />} />
             <Route path="write" element={<Write />} />
-            <Route path=":blog" element={<Random />} />
+            <Route path=":blogId" element={<Random />} />
           </Route>
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
