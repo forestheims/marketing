@@ -12,15 +12,24 @@
 
 .Write label {
     color: #9fd34d;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .Write input[type='text'] {
+    letter-spacing: 1.5px;
     color: var(--color-3);
     font-weight: 900;
+    margin: 10px;
+    background-color: #151515;
 }
 
-.Write input[type='textarea'] {
-    display: flex;
+.Write input[type='text']:hover {
+    
+}
+
+.Write textarea {
+    text-align: left;
     color: var(--color-7);
     font-weight: 600;
     font-size: 1rem;
@@ -29,8 +38,6 @@
     height: 600px;
     background-color: #151515;
     color:rgb(92, 171, 218);
-    text-align: center;
-    justify-content: flex-start;
 }
 
 .Write button {
