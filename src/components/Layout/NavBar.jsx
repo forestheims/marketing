@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useTheme } from '../../context/themeProvider';
+import styles from './Layout.css';
 
 export default function NavBar() {
   const { theme, setTheme } = useTheme();
@@ -15,9 +16,9 @@ export default function NavBar() {
       <NavLink to="blog">Blog</NavLink>
       <NavLink to="projects">Projects</NavLink>
       <NavLink to="contact">Contact</NavLink>
-      <button onClick={(e) => handleClick(e)}>
-        <img src="/images/5558220.png"></img>
-      </button>
+      <div className={styles.circle}>
+        <img onClick={(e) => handleClick(e)} src="/images/5558220.png"></img>
+      </div>
     </header>
   );
 }
