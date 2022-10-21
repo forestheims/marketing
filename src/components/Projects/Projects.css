@@ -1,5 +1,6 @@
 .Projects {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -7,12 +8,19 @@
 }
 
 .Project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(85, 151, 151);
     border: solid rgb(9, 71, 71) 4px;
     border-radius: 8px;
     padding: 10px;
+    gap: 15px;
 }
 
 .Project img {
     width: 400px;
+    border-radius: 4px;
+    border:#414141 solid 2px;
 }
