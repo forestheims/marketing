@@ -22,10 +22,37 @@ body {
     width: 200px;
     gap: 20px;
     margin: 10px;
+    z-index: 100;
+}
+
+@media screen and (max-width: 728px) {
+    .Layout header {
+        flex-direction: column;
+        align-items: flex-start;
+        width:auto;
+        position:fixed;
+        left: 4px;
+        gap: 5px;
+    }
+
+    .Layout header img:last-of-type {
+        position: fixed;
+        right: 14px;
+        top: 14px;
+    }
 }
 
 .Layout header a:hover {
-    color: #ff40cf
+    color: #ff40cf;
+}
+
+.Layout header a {
+    background-color: #20202088;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .Layout header .circle:hover {
@@ -56,6 +83,7 @@ body {
 .Layout footer {
     width: 200px;
     margin: 20px;
+    z-index: 100;
 }
 
 .Layout footer p {
