@@ -1,7 +1,7 @@
 import styles from './Home.css';
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { useFollowPointer } from './useFollowPointer.js';
+import { useFollowPointer } from '../../hooks/useFollowPointer';
 
 export default function Home() {
   const ref = useRef(null);
@@ -12,8 +12,8 @@ export default function Home() {
       y: y + Math.sin(1),
       transition: {
         type: 'spring',
-        damping: i + 1,
-        stiffness: i + 1,
+        damping: (i + 2) / 2,
+        stiffness: (i + 2) * 2,
         restDelta: 0.01 * i,
       },
     }),
