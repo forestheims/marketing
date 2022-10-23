@@ -1,0 +1,19 @@
+.DivDots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.thirtyThree {
+    width: 33px;
+    height: 33px;
+    background-color: var(--color-3);
+    border-radius: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.thirtyThree:hover {
+    background-color: var(--color-1);
+}
