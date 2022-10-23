@@ -7,30 +7,25 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 export default function Contact() {
-  const [animating, setAnimating] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => void setAnimating(false), 5500);
-  }, []);
-
   return (
     <div className={styles.Contact}>
-      {animating && (
-        <motion.iframe
-          className={styles.changingPdf}
-          src={resumeDisco}
-          animate={{
-            scale: [0.1, 1, 1, 1, 1, 0.75, 0.1],
-            x: [0, 0, 0, 0, 0, -200],
-            y: [-20, -20, -20, -20, -20, -320],
-            borderRadius: ['0%', '0%', '0%', '0%', '20%', '20%'],
-            opacity: [1, 1, 1, 1, 1, 0],
-          }}
-          transition={{
-            duration: 4.5,
-          }}
-        ></motion.iframe>
-      )}
+      <motion.iframe
+        className={styles.changingPdf}
+        src={resumeDisco}
+        animate={{
+          scale: [0.1, 1, 1, 1, 1, 1, 1, 0.75, 0.1],
+          x: [0, 0, 0, 0, 0, 0, 0, -220],
+          y: [-20, -20, -20, -20, -20, -20, -20, -310],
+          borderRadius: ['10%', '0%', '0%', '0%', '0%', '0%', '10%', '10%'],
+          opacity: [0, 1, 1, 1, 1, 1, 1, 0],
+          transitionEnd: {
+            display: 'none',
+          },
+        }}
+        transition={{
+          duration: 5,
+        }}
+      />
       <a href="/resume/dark-mode-resume.pdf" target="_blank">
         <img src={pdfPng} alt="pdf symbol" />
         View / Download my Resume
