@@ -4,9 +4,19 @@ import gitHubLogo from '../../../public/images/GitHub-Mark-Light-64px.png';
 import pdfPng from '../../../public/images/pdf.png';
 import resumeDisco from '../../../public/resume/resume-disco.mp4';
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import useForm from '../../hooks/useForm';
 
 export default function Contact() {
+  const { formState, formError, handleFormChange, setFormError } = useForm({
+    email: '',
+    message: '',
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('formState :>> ', formState);
+  };
+
   return (
     <div className={styles.Contact}>
       <motion.iframe
@@ -42,6 +52,28 @@ export default function Contact() {
         <img src={linkedInLogo} alt="linkedin logo" />
         linkedin.com/in/forestheims
       </a>
+      <form onSubmit={(e) => handleSubmit(e)}>
+        <h3>Or, you can leave me a message here:</h3>
+        <label htmlFor="email">
+          Email:
+          <input
+            type="email"
+            name="email"
+            value={formState.email}
+            onChange={(e) => handleFormChange(e)}
+          />
+        </label>
+        <label htmlFor="message">
+          Message:
+          <textarea
+            name="message"
+            value={formState.message}
+            onChange={(e) => handleFormChange(e)}
+          />
+        </label>
+        {formError && <p>Error: {formError}</p>}
+        <input type="submit" />
+      </form>
     </div>
   );
 }
