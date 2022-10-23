@@ -21,9 +21,10 @@ export default function Contact() {
           src={resumeDisco}
           animate={{
             scale: [0.1, 1, 1, 1, 1, 0.75, 0.1],
-            x: [0, 0, 0, 0, 0, 200],
+            x: [0, 0, 0, 0, 0, -200],
             y: [-20, -20, -20, -20, -20, -320],
             borderRadius: ['0%', '0%', '0%', '0%', '20%', '20%'],
+            opacity: [1, 1, 1, 1, 1, 0],
           }}
           transition={{
             duration: 4.5,
