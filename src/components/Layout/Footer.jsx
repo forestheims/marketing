@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer>
-      <p>{theme}</p>
+      <p>{theme.darkMode && 'dark mode on'}</p>
     </footer>
   );
 }
