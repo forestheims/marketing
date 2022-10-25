@@ -11,7 +11,7 @@
     background-color: var(--color-3);
     border-radius: 100%;
     position: absolute;
-    cursor: pointer;
+    z-index: 1;
 }
 
 .thirtyThree:hover {
