@@ -2,6 +2,7 @@ import styles from './Contact.css';
 import linkedInLogo from '../../../public/images/LI-In-Bug.png';
 import gitHubLogo from '../../../public/images/GitHub-Mark-Light-64px.png';
 import pdfPng from '../../../public/images/pdf.png';
+import emailPng from '../../../public/images/email.png';
 import resumeDisco from '../../../public/resume/resume-disco.mp4';
 import { motion } from 'framer-motion';
 import useForm from '../../hooks/useForm';
@@ -41,7 +42,11 @@ export default function Contact() {
         View / Download my Resume
       </a>
       <a href="mailto:forestheims@gmail.com" target="_blank">
-        <h2>📧</h2>
+        <img
+          src={emailPng}
+          alt="email symbol"
+          // style={{ filter: 'invert(1)' }}
+        />
         forestheims@gmail.com
       </a>
       <a href="https://github.com/forestheims" target="_blank">
