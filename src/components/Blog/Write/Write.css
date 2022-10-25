@@ -8,6 +8,7 @@
     padding: 10px;
     border: solid 4px var(--color-1);
     font-family: Arial, Helvetica, sans-serif;
+    pointer-events: auto;
 }
 
 .Write label {
@@ -21,11 +22,10 @@
     color: var(--color-3);
     font-weight: 900;
     margin: 10px;
-    background-color: #151515;
+    background-color: #15151555;
 }
 
 .Write input[type='text']:hover {
-    
 }
 
 .Write textarea {
@@ -35,8 +35,8 @@
     font-size: 1rem;
     font-family: 'Courier New', Courier, monospace;
     width: 400px;
-    height: 600px;
-    background-color: #151515;
+    height: 500px;
+    background-color: #15151555;
     color:rgb(92, 171, 218);
 }
 
