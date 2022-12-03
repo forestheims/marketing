@@ -22,10 +22,8 @@ export default function NavBar() {
         {theme.divDots && <DivDots />}
       </div>
       <NavLink to="">Home</NavLink>
-      <NavLink to="blog">Blog</NavLink>
       <NavLink to="projects">Projects</NavLink>
       <NavLink to="contact">Contact</NavLink>
-      <NavLink to="work">Hire Me</NavLink>
       <div className={styles.Circle}>
         <img onClick={(e) => handleTheme(e)} src="/images/5558220.png"></img>
       </div>

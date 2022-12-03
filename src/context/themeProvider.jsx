@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from 'react';
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState({ darkMode: true, divDots: true });
+  const [theme, setTheme] = useState({ darkMode: true, divDots: false });
 
   const contextValue = { theme, setTheme };
 
