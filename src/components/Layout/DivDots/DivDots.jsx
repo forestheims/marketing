@@ -2,18 +2,17 @@ import styles from './DivDots.css';
 import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useFollowPointer } from '../../../hooks/useFollowPointer';
-import { useIsMedium, useIsSmall } from '../../../hooks/useMediaQuery';
+// import { useIsMedium, useIsSmall } from '../../../hooks/useMediaQuery';
 
 export default function DivDots() {
-  const isSmall = useIsSmall();
-  const isMedium = useIsMedium();
+  // const isSmall = useIsSmall();
+  // const isMedium = useIsMedium();
   const ref = useRef(null);
   const { x, y } = useFollowPointer(ref);
-  const xy = x * y;
 
-  useEffect(() => {
-    console.log('x, y', x, y, xy);
-  }, [x, y]);
+  // useEffect(() => {
+  //   console.log('x, y', x, y, xy);
+  // }, [x, y]);
 
   const variants = {
     entryPage: (i) => ({

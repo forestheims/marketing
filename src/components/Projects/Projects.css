@@ -1,15 +1,21 @@
 .Projects {
+    padding: 40px;
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 10px;
     z-index: 1;
 }
 
+.ProjectsTitle {
+    color: aliceblue;
+}
+
 .Project {
+    margin: 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,8 +27,14 @@
     gap: 15px;
 }
 
-.Project img {
+.ProjectImg {
     width: 400px;
     border-radius: 4px;
     border:#414141 solid 2px;
+}
+
+.ProjectLinks {
+    display: flex;
+    font-weight: 700;
+    gap: 20px;
 }

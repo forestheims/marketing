@@ -6,25 +6,27 @@ import styles from './Projects.css';
 export default function Projects() {
   return (
     <div className={styles.Projects}>
-      <p>Projects</p>
+      <h2 className={styles.ProjectsTitle}>Web Developer Experience</h2>
       <Project
         project={{
-          github: '',
+          github: 'https://github.com/forestheims',
           link: '',
           coDevelopers: [],
           img: {},
           description: '',
           tags: [],
+          title: '',
         }}
       />
       <Project
         project={{
-          github: '',
+          github: 'https://github.com/forestheims',
           link: '',
           coDevelopers: [],
           img: {},
           description: '',
           tags: [],
+          title: '',
         }}
       />
     </div>
