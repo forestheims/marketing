@@ -17,15 +17,29 @@ export default function NavBar() {
   };
 
   return (
-    <header>
-      <div className={styles.DivDotsCircle} onClick={(e) => handleClick(e)}>
-        {theme.divDots && <DivDots />}
-      </div>
-      <NavLink to="">Home</NavLink>
-      <NavLink to="projects">Projects</NavLink>
-      <NavLink to="contact">Contact</NavLink>
-      <div className={styles.Circle}>
-        <img onClick={(e) => handleTheme(e)} src="/images/5558220.png"></img>
+    <header className={styles.Header}>
+      <h1 className={styles.HOne}>Forest Heims</h1>
+
+      <div className={styles.Links}>
+        <NavLink className={styles.Link} to="">
+          Home
+        </NavLink>
+        <NavLink className={styles.Link} to="projects">
+          Projects
+        </NavLink>
+        <NavLink className={styles.Link} to="contact">
+          Contact
+        </NavLink>
+        <div className={styles.DivDotsCircle} onClick={(e) => handleClick(e)}>
+          {theme.divDots && <DivDots />}
+        </div>
+        {/* <div className={styles.Circle}>
+          <img
+            className={styles.CircleImg}
+            onClick={(e) => handleTheme(e)}
+            src="/images/5558220.png"
+          ></img>
+        </div> */}
       </div>
     </header>
   );

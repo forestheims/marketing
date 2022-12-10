@@ -57,7 +57,7 @@ export default function Contact() {
         <img src={linkedInLogo} alt="linkedin logo" />
         linkedin.com/in/forestheims
       </a>
-      <form onSubmit={(e) => handleSubmit(e)}>
+      {/* <form onSubmit={(e) => handleSubmit(e)}>
         <h3>Or, you can leave me a message here:</h3>
         <label htmlFor="email">
           Email:
@@ -78,7 +78,7 @@ export default function Contact() {
         </label>
         {formError && <p>Error: {formError}</p>}
         <input type="submit" />
-      </form>
+      </form> */}
     </div>
   );
 }
