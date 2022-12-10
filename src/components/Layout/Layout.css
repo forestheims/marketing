@@ -52,15 +52,6 @@ body {
     gap: 10px;
 }
 
-.Link:hover {
-    text-decoration: underline;
-    background: -webkit-linear-gradient( 89deg, #85ddec, #ec7eff );
-    background-size:600vw 600vw;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textAnimRotate 2.5s linear infinite alternate;
-}
-
 .Link {
     padding: 4px 8px;
     border-radius: 8px;
@@ -68,9 +59,19 @@ body {
     text-decoration: none;
 }
 
+.Link:hover {
+    text-decoration: underline;
+    /* background: -webkit-linear-gradient( 89deg, #85ddec, #ec7eff );
+    background-size:600vw 600vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textAnimRotate 2.5s linear infinite alternate; */
+}
+
+
 .DivDotsCircle {
     display: flex;
-    background-color: #ff40cf;
+    background-color: var(--color-7);
     width: 30px;
     height: 30px;
     border-radius: 100%;

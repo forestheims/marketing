@@ -13,10 +13,10 @@ export default function Project({ project }) {
         ))}
       </ul>
       <div className={styles.ProjectLinks}>
-        <a href={link} target="_blank">
+        <a className={styles.ProjectLink} href={link} target="_blank">
           Deployed Site
         </a>
-        <a href={github} target="_blank">
+        <a className={styles.ProjectLink} href={github} target="_blank">
           GitHub Repo
         </a>
       </div>

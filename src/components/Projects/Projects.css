@@ -35,6 +35,14 @@
 
 .ProjectLinks {
     display: flex;
-    font-weight: 700;
     gap: 20px;
+}
+
+.ProjectLink {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ProjectLink:hover {
+    text-decoration: underline;
 }
