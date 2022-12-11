@@ -34,17 +34,6 @@ body {
     background-color: #808080;
 }
 
-@media screen and (max-width: 768px) {
-    .Header {
-        flex-direction: column;
-        align-items: flex-start;
-        width:auto;
-        /* position:fixed; */
-        left: 4px;
-        gap: 5px;
-        border: none;
-    }
-}
 
 .Links {
     display: flex;
@@ -98,12 +87,12 @@ body {
     /* pointer-events: none; */
     /* 
     never been in this situation before:
-
+    
     pointer-events is set to none so that the DivDots are hover-able and clickable,
     even while being behind (lower in z-index) the main element and its children.
-
+    
     However, to make scroll function correctly, pointer-events needs to be set to auto.
-
+    
     May have figured out a solution, setting z-index to 0.
     If this plan works, the next step would be to set the z-index towards the top to each element that needs to be above the DivDots
     */
@@ -127,9 +116,21 @@ body {
 
 @keyframes textAnimRotate {
     from {
-      filter: hue-rotate(0deg);
+        filter: hue-rotate(0deg);
     }
     to {
-      filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
     }
-  }
+}
+
+@media screen and (max-width: 768px) {
+    .Header {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        /* position:fixed; */
+        left: 4px;
+        gap: 5px;
+        border: none;
+    }
+}

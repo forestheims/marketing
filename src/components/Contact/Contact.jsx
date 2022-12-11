@@ -6,37 +6,57 @@ import emailPng from '../../../public/images/email.png';
 import resumeDisco from '../../../public/resume/resume-disco.mp4';
 import { motion } from 'framer-motion';
 import useForm from '../../hooks/useForm';
+import { useEffect, useState } from 'react';
 
 export default function Contact() {
-  const { formState, formError, handleFormChange, setFormError } = useForm({
-    email: '',
-    message: '',
-  });
+  const [beenHere, setBeenHere] = useState('has not been here');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('formState :>> ', formState);
-  };
+  useEffect(() => {
+    const setReturn = () => {
+      const hasBeenHere = localStorage.getItem('HASBEENHERE');
+      if (hasBeenHere === 'has been here') {
+        setBeenHere(hasBeenHere);
+      } else {
+        setTimeout(
+          () => void localStorage.setItem('HASBEENHERE', 'has been here'),
+          6000
+        );
+      }
+    };
+    setReturn();
+  }, []);
+
+  // const { formState, formError, handleFormChange, setFormError } = useForm({
+  //   email: '',
+  //   message: '',
+  // });
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log('formState :>> ', formState);
+  // };
 
   return (
     <div className={styles.Contact}>
-      <motion.iframe
-        className={styles.changingPdf}
-        src={resumeDisco}
-        animate={{
-          scale: [0.1, 1, 1, 1, 1, 1, 1, 0.75, 0.1],
-          x: [0, 0, 0, 0, 0, 0, 0, -220],
-          y: [-20, -20, -20, -20, -20, -20, -20, -310],
-          borderRadius: ['10%', '0%', '0%', '0%', '0%', '0%', '10%', '10%'],
-          opacity: [0, 1, 1, 1, 1, 1, 1, 0],
-          transitionEnd: {
-            display: 'none',
-          },
-        }}
-        transition={{
-          duration: 5,
-        }}
-      />
+      {beenHere === 'has not been here' && (
+        <motion.iframe
+          className={styles.changingPdf}
+          src={resumeDisco}
+          animate={{
+            scale: [0.1, 1, 1, 1, 1, 1, 1, 0.75, 0.1],
+            x: [0, 0, 0, 0, 0, 0, 0, -220],
+            y: [-20, -20, -20, -20, -20, -20, -20, -310],
+            borderRadius: ['10%', '0%', '0%', '0%', '0%', '0%', '10%', '10%'],
+            opacity: [0, 1, 1, 1, 1, 1, 1, 0],
+            transitionEnd: {
+              display: 'none',
+            },
+          }}
+          transition={{
+            duration: 5,
+          }}
+        />
+      )}
       <a href="/resume/dark-mode-resume.pdf" target="_blank">
         <img src={pdfPng} alt="pdf symbol" />
         View / Download my Resume

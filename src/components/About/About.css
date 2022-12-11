@@ -29,6 +29,12 @@
     animation: textAnimRotate 20s linear infinite alternate;     */
 }
 
+@media screen and (max-width: 768px) {
+  .Paragraph {
+    width: 100%;
+  }
+}
+
 .AboutLink {
     font-weight: 400;
     font-size: 16px;
