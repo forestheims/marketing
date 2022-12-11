@@ -7,3 +7,44 @@
     padding: 40px;
     gap: 40px;
 }
+
+.AboutHTwo {
+    color: aliceblue;
+    padding-bottom: 20px;
+}
+
+.Paragraph {
+    text-indent: 60px;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: slategray;
+    letter-spacing: 1px;
+    width: 65%;
+    /* background: -webkit-linear-gradient( 89deg, #85ddec, #ec7eff );
+    background-size:600vw 600vw;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textAnimRotate 20s linear infinite alternate;     */
+}
+
+@media screen and (max-width: 768px) {
+  .Paragraph {
+    width: 100%;
+  }
+}
+
+.AboutLink {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@keyframes textAnimRotate {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
