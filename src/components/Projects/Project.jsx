@@ -5,9 +5,9 @@ export default function Project({ project }) {
   const { title, github, link, coDevelopers, img, description, tags } = project;
   return (
     <div className={styles.Project}>
-      <h2>{title}</h2>
-      <ul>
-        Tech Stack:
+      <h2 className={styles.ProjectTitle}>{title}</h2>
+      <p className={styles.ProjectDescription}>{description}</p>
+      <ul className={styles.ProjectTechStack}>
         {tags.map((tag) => (
           <li key={tag}>{tag}</li>
         ))}
@@ -20,13 +20,14 @@ export default function Project({ project }) {
           GitHub Repo
         </a>
       </div>
-      <ul>
-        Developers:
+      <p>Developers:</p>
+      <ul className={styles.ProjectDevelopers}>
         {coDevelopers.map((dev) => (
-          <li key={dev}>{dev}</li>
+          <li key={dev} className={styles.ProjectDeveloperLink}>
+            {dev}
+          </li>
         ))}
       </ul>
-      <p>{description}</p>
       <img className={styles.ProjectImg} src={img} />
     </div>
   );
