@@ -29,6 +29,39 @@ export default function Projects() {
           title: '',
         }}
       />
+      <Project
+        project={{
+          github: 'https://github.com/forestheims',
+          link: '',
+          coDevelopers: [],
+          img: {},
+          description: '',
+          tags: [],
+          title: '',
+        }}
+      />
+      <Project
+        project={{
+          github: 'https://github.com/forestheims',
+          link: '',
+          coDevelopers: [],
+          img: {},
+          description: '',
+          tags: [],
+          title: '',
+        }}
+      />
+      <Project
+        project={{
+          github: 'https://github.com/forestheims',
+          link: '',
+          coDevelopers: [],
+          img: {},
+          description: '',
+          tags: [],
+          title: '',
+        }}
+      />
     </div>
   );
 }

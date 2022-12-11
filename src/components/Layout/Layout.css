@@ -6,11 +6,11 @@ body {
 }
 
 .Layout {
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     height: 100vh;
 }
@@ -39,7 +39,7 @@ body {
         flex-direction: column;
         align-items: flex-start;
         width:auto;
-        position:fixed;
+        /* position:fixed; */
         left: 4px;
         gap: 5px;
         border: none;
@@ -90,7 +90,7 @@ body {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     z-index: 0;
     pointer-events: auto;

@@ -14,9 +14,11 @@ export default function About() {
         </p>
         <p className={styles.Paragraph}>
           I come from a background in chemistry, philosophy, and art. Education
-          will always be a value I hold, and I enjoy teaching and continuous
-          learning. I find software engineering to be a beautiful place to
-          combine creativity and logic.
+          will always be a value I hold, and I enjoy teaching and continuously
+          learning. I find software engineering to be a fun space to combine
+          creativity, logic, and problem solving skills. What I have found most
+          enjoyable is working collaboratively with a team of people on sprint
+          projects.
         </p>
         <p className={styles.Paragraph}>
           Currently I am looking for work as a Web Developer. I would love to
