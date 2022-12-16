@@ -38,6 +38,7 @@
 .AboutLink {
     font-weight: 400;
     font-size: 16px;
+    color: var(--color-4);
 }
 
 @keyframes textAnimRotate {

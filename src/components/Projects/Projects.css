@@ -46,6 +46,7 @@
     padding: 5px;
     border-radius: 5px;
     border: #414141 solid 2px;
+    color: var(--color-4);
 }
 
 .ProjectLink:hover {
