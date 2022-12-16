@@ -1,1 +1,5 @@
-/*  /index.html   200
+/* /index.html 200
+
+https://forestheims.com/* https://forestheims.dev/:splat 301!
+https://forestheims.org/* https://forestheims.dev/:splat 301!
+https://forestheims.net/* https://forestheims.dev/:splat 301!
