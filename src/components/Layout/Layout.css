@@ -65,10 +65,20 @@ body {
 
 .DivDotsCircle {
     display: flex;
-    background-color: var(--color-7);
+    background-color: #551A8B;
     width: 30px;
     height: 30px;
     border-radius: 100%;
+    animation: blink 5s alternate infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: var(--color-1);
+    }
+    100% {
+        background-color: #551a8b;
+    }
 }
 
 .DivDotsCircle div {
