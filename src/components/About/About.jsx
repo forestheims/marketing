@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import styles from './About.css';
 
 export default function About() {
@@ -19,20 +18,6 @@ export default function About() {
           creativity, logic, and problem solving skills. What I have found most
           enjoyable is working collaboratively with a team of people on sprint
           projects.
-        </p>
-        <p className={styles.Paragraph}>
-          Currently I am looking for work as a Web Developer. I would love to
-          work in video game development or computational chemistry software
-          someday, but for now I am just trying to get my foot in the door to
-          the software engineering field. Check out the{' '}
-          <NavLink className={styles.AboutLink} to="projects">
-            projects
-          </NavLink>{' '}
-          link to see the web apps I have worked on. Or check out the{' '}
-          <NavLink className={styles.AboutLink} to="contact">
-            contact
-          </NavLink>{' '}
-          link for links to my resume, email, GitHub, and LinkedIn.
         </p>
       </article>
     </div>
