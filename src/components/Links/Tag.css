@@ -1,6 +1,7 @@
 .Tag {
     color: var(--color-1);
     background-color: #333;
+    font-size: 14px;
     padding: 3px;
     border-radius: 5px;
 }

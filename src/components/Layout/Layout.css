@@ -63,10 +63,9 @@ body {
 }
 
 .Footer {
-    width: 200px;
+    width: 100vw;
+    position: fixed;
     margin: 20px;
-    position: absolute;
-    bottom: 0px;
 }
 
 @media screen and (max-width: 768px) {

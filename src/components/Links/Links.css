@@ -1,10 +1,20 @@
 .Links {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    padding: 20px;
+    margin: 20px 40px 0px 20px;
+    padding: 20px 5px 5px 20px;
     gap: 10px;
     width: 38.2vw;
+    height: 62.8%;
+    background-color: #696969;
+}
+
+.ScrollContainer {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: none;
+    gap: 10px;
 }
 
 .LinksHTwo {

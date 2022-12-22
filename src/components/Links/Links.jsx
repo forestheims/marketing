@@ -1,40 +1,43 @@
 import { useEffect, useState } from 'react';
+import getLinks from '../../services/getLinks.js';
 import Bookmark from './Bookmark';
 import styles from './Links.css';
+
 export default function Links() {
   const [links, setLinks] = useState([]);
   const [filter, setFilter] = useState('All');
   const [tags, setTags] = useState(['All']);
+
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(process.env.API_URL + '/api/v1/links', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        credentials: 'include',
-        mode: 'cors',
-      });
-      const data = await res.json();
-      setLinks(data);
-      const tagArr = ['All'];
-      data.forEach((link) => {
-        link.tags.forEach((tag) => {
-          if (!tagArr.includes(tag)) {
-            tagArr.push(tag);
-          }
-        });
-      });
-      setTags(tagArr);
+      try {
+        const stuff = await getLinks();
+        setLinks(stuff);
+      } catch (error) {
+        console.log(error);
+        setLinks([]);
+      }
     };
     fetchData();
-  }, [filter]);
+  }, []);
+
+  useEffect(() => {
+    const tagArr = ['All'];
+    links.forEach((link) => {
+      link.tags.forEach((tag) => {
+        if (!tagArr.includes(tag.toLowerCase())) {
+          tagArr.push(tag.toLowerCase());
+        }
+      });
+    });
+    setTags(tagArr);
+  }, [filter, links]);
 
   return (
     <div className={styles.Links}>
-      <h2 className={styles.LinksHTwo}>Bookmarks</h2>
+      <h2 className={styles.LinksHTwo}>My Bookmarks</h2>
       <label htmlFor="filter" className={styles.FilterLabel}>
-        Filter:
+        Filter By Tag:
         <select
           name="filter"
           className={styles.FilterInput}
@@ -50,16 +53,18 @@ export default function Links() {
           })}
         </select>
       </label>
-      {links.map((link) => {
-        return (
-          <Bookmark
-            link={link}
-            key={link.id}
-            filter={filter}
-            setFilter={setFilter}
-          />
-        );
-      })}
+      <div className={styles.ScrollContainer}>
+        {links.map((link) => {
+          return (
+            <Bookmark
+              link={link}
+              key={link.id}
+              filter={filter}
+              setFilter={setFilter}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
