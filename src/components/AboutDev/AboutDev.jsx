@@ -18,8 +18,8 @@ export default function About() {
           problems.
         </p>
         <p className={styles.Paragraph}>
-          My experience is in collaboratively planning, designing, and building
-          web apps as sprint projects while using agile methodologies. I love
+          My experience is in planning, designing, and building web apps as
+          sprint projects while using agile methodologies. I love
           collaboratively working on software with people. My personable nature
           and ability to listen deeply are skills that I always bring to any
           team.
