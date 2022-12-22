@@ -1,0 +1,11 @@
+.Tag {
+    color: var(--color-1);
+    background-color: #333;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.Tag:hover {
+    cursor: pointer;
+    background-color: #555;
+}

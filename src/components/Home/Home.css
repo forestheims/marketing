@@ -1,0 +1,10 @@
+.Home {
+    width: 100vw;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .Home {
+        flex-direction: column;
+    }
+}

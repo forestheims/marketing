@@ -1,0 +1,32 @@
+.Bookmark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--color-2);
+    transition: border 2s;
+}
+
+.Bookmark:hover {
+    border: 1px solid var(--color-4);
+}
+
+.BookmarkLink {
+    color: var(--color-4);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: color 2s;
+}
+
+.BookmarkLink:hover {
+    background-color: #555;
+}
+
+.Tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
