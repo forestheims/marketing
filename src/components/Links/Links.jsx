@@ -4,6 +4,7 @@ import styles from './Links.css';
 export default function Links() {
   const [links, setLinks] = useState([]);
   const [filter, setFilter] = useState('All');
+  const [tags, setTags] = useState(['All']);
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(process.env.API_URL + '/api/v1/links', {
@@ -16,6 +17,15 @@ export default function Links() {
       });
       const data = await res.json();
       setLinks(data);
+      const tagArr = ['All'];
+      data.forEach((link) => {
+        link.tags.forEach((tag) => {
+          if (!tagArr.includes(tag)) {
+            tagArr.push(tag);
+          }
+        });
+      });
+      setTags(tagArr);
     };
     fetchData();
   }, [filter]);
@@ -31,15 +41,12 @@ export default function Links() {
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
         >
-          <option value="All">All</option>
-          {links.map((link) => {
-            return link.tags.map((tag) => {
-              return (
-                <option value={tag} key={tag}>
-                  {tag}
-                </option>
-              );
-            });
+          {tags.map((tag) => {
+            return (
+              <option value={tag} key={tag}>
+                {tag}
+              </option>
+            );
           })}
         </select>
       </label>
