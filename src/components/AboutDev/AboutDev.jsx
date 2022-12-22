@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import TechStack from '../TechStack/TechStack';
 import styles from './AboutDev.css';
 
 export default function About() {
@@ -7,6 +8,7 @@ export default function About() {
     <div className={styles.About}>
       <article>
         <h2 className={styles.AboutHTwo}>About me, as a Web Developer</h2>
+        <TechStack />
         <p className={styles.Paragraph}>
           I am looking for a position as a Web Developer or Full Stack Software
           Engineer at a company with ethical integrity. I am a curious person

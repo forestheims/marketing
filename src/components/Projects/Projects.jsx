@@ -6,7 +6,7 @@ import styles from './Projects.css';
 export default function Projects() {
   return (
     <div className={styles.Projects}>
-      <h2 className={styles.ProjectsTitle}>Web Developer Experience</h2>
+      <h2 className={styles.ProjectsTitle}>Projects I've worked on</h2>
       <Project
         project={{
           github: 'https://github.com/geo-tone/geo-tone-frontend',

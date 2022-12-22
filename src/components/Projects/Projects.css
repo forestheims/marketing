@@ -15,7 +15,8 @@
 }
 
 .Project {
-    color:slategray;
+    color:var(--paragraph);
+    background-image: linear-gradient(45deg, var(--paragraph-background), #202020);
     font-size: 20px;
     margin: 10px 20px;
     width: fit-content;
