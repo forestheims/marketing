@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className={styles.About}>
       <article>
-        <h2 className={styles.AboutHTwo}>Person</h2>
+        <h2 className={styles.AboutHTwo}>About me, as a person</h2>
         <p className={styles.Paragraph}>
           My mind is interested in understanding how things work. My heart is
           interested in connecting with people. My soul is interested in

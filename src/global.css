@@ -10,8 +10,10 @@
     --color-5: #f1c9f7;
     --color-6: #521444;
     --color-7: #422079;
-    --color-8: #99bb8c;
+    --color-8: #7cc95e;
     --color-9: #16fcdd;
-    --color-10: #c4fff7;
+    --header: #454545;
+    --paragraph: #aaaaaa;
+    --paragraph-background: #141414;
     background-color: #202020;
   }

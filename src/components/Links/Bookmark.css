@@ -2,12 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid var(--color-2);
-    transition: border 2s;
-}
-
-.Bookmark:hover {
-    border: 1px solid var(--color-4);
 }
 
 .BookmarkLink {
