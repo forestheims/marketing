@@ -85,29 +85,39 @@
 }
 
 @media screen and (max-width: 768px) {
+    .Projects {
+        width: stretch;
+    }
+    .Project {
+        width: stretch;
+    }
     .ProjectImg {
-      width: 200px;
+      width: stretch;
     }
     .ProjectDevelopers {
-        gap: 12px;
+        gap: 20px;
         flex-wrap: wrap;
-        width: 200px;
+        width: stretch;
+        justify-content: space-between;
     }
     .ProjectDeveloperLink {
+        margin: 10px;
         text-indent: -8px;
         padding-left: 8px;
+        font-size: 18px;
     }
     .ProjectTechStack {
         display: flex;
         flex-wrap: wrap;
         width: 200px;
-        font-size: 14px;
+        font-size: 16px;
         gap: 10px;
         color: slateblue;
     }
     .ProjectLinks {
         flex-direction: column;
         gap: 10px;
-        margin-left: 30px;
+        margin-left: 20px;
+        align-items: flex-start;
     }
   }

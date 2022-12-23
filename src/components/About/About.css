@@ -37,3 +37,16 @@
   background-color: #333;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .About {
+      width: stretch;
+      margin: 20px;
+    }
+    .AboutHTwo {
+      font-size: 20px;
+    }
+    .Paragraph {
+      font-size: 20px;
+  }
+}
