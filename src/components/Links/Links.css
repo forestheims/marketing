@@ -12,9 +12,11 @@
 .ScrollContainer {
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
-    scrollbar-width: none;
+    overflow-y: hidden;
     gap: 10px;
+}
+.ScrollContainer:hover {
+    overflow-y: auto;
 }
 
 .LinksHTwo {
@@ -40,6 +42,6 @@ margin-left: 20px;
     margin: 20px;
     font-size: 20px;
     padding-bottom: 40px;
-    height: 80%;
+    height: 80vh;
 }
 }
