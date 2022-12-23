@@ -8,14 +8,14 @@ import Write from './components/Blog/Write/Write';
 import Browse from './components/Blog/Browse/Browse';
 import Blog from './components/Blog/Blog';
 import Projects from './components/Projects/Projects';
-import About from './components/About/About';
+import Home from './components/Home/Home';
 
 export default function App() {
   return (
     <Router>
       <Routes>
         <Route element={<Layout />}>
-          <Route index element={<About />} />
+          <Route index element={<Home />} />
           <Route path="blog" element={<Blog />}>
             <Route index element={<Browse />} />
             <Route path="write" element={<Write />} />

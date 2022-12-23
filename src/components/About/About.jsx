@@ -1,12 +1,11 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import styles from './About.css';
 
 export default function About() {
   return (
     <div className={styles.About}>
       <article>
-        <h2 className={styles.AboutHTwo}>Web Developer</h2>
+        <h2 className={styles.AboutHTwo}>About me, as a Person</h2>
         <p className={styles.Paragraph}>
           My mind is interested in understanding how things work. My heart is
           interested in connecting with people. My soul is interested in
@@ -19,20 +18,6 @@ export default function About() {
           creativity, logic, and problem solving skills. What I have found most
           enjoyable is working collaboratively with a team of people on sprint
           projects.
-        </p>
-        <p className={styles.Paragraph}>
-          Currently I am looking for work as a Web Developer. I would love to
-          work for a computational chemistry software company someday, but for
-          now I am just trying to get my foot in the door to this industry.
-          Check out the{' '}
-          <NavLink className={styles.AboutLink} to="projects">
-            projects
-          </NavLink>{' '}
-          link to see the web apps I have worked on. Or check out the{' '}
-          <NavLink className={styles.AboutLink} to="contact">
-            contact
-          </NavLink>{' '}
-          link for links to my resume, email, GitHub, and LinkedIn.
         </p>
       </article>
     </div>

@@ -1,0 +1,12 @@
+.TechStack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 20px;
+}
+
+.Logo {
+    height: 70px;
+}

@@ -1,0 +1,12 @@
+.SoloProjects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 47.2%;
+    background-color: #686868;
+    margin: 20px;
+    padding: 20px;
+
+}

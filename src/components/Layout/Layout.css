@@ -6,7 +6,6 @@ body {
 }
 
 .Layout {
-    /* overflow: hidden; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -16,9 +15,11 @@ body {
 }
 
 .HOne {
+    color: var(--color-1);
     font-size: 2rem;
     font-weight: 400;
-    padding: 0px 20px;
+    opacity: 100%;
+    padding: 20px;
 }
 
 .Header {
@@ -27,11 +28,8 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    margin: 10px 0px;
-    z-index: 2;
-    padding: 20px 0px;
     width: 100%;
-    background-color: #808080;
+    background-color: var(--header);
 }
 
 
@@ -49,34 +47,8 @@ body {
     color: var(--color-4);
 }
 
-.Link:active {
-    color: #551a8b;
-}
-
 .Link:hover {
     text-decoration: underline;
-    /* background: -webkit-linear-gradient( 89deg, #85ddec, #ec7eff );
-    background-size:600vw 600vw;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textAnimRotate 2.5s linear infinite alternate; */
-}
-
-
-.DivDotsCircle {
-    display: flex;
-    background-color: var(--color-7);
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-}
-
-.DivDotsCircle div {
-    z-index: 1;
-}
-
-.DivDotsCircle:hover {
-    background-color: var(--color-1);
 }
 
 .Main {
@@ -86,46 +58,14 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    z-index: 0;
     pointer-events: auto;
     overflow-x: hidden;
-    /* pointer-events: none; */
-    /* 
-    never been in this situation before:
-    
-    pointer-events is set to none so that the DivDots are hover-able and clickable,
-    even while being behind (lower in z-index) the main element and its children.
-    
-    However, to make scroll function correctly, pointer-events needs to be set to auto.
-    
-    May have figured out a solution, setting z-index to 0.
-    If this plan works, the next step would be to set the z-index towards the top to each element that needs to be above the DivDots
-    */
 }
 
 .Footer {
-    width: 200px;
+    width: 100vw;
+    position: fixed;
     margin: 20px;
-    z-index: 2;
-    position: absolute;
-    bottom: 0px;
-}
-
-/* .Layout header {
-    z-index: 2;
-} */
-
-.DivDotsCircle div {
-    z-index: -1;
-}
-
-@keyframes textAnimRotate {
-    from {
-        filter: hue-rotate(0deg);
-    }
-    to {
-        filter: hue-rotate(360deg);
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -137,5 +77,15 @@ body {
         left: 4px;
         gap: 5px;
         border: none;
+    }
+
+    .Links {
+        font-size: 20px;
+        padding: 0px 0px 20px 20px;
+    }
+
+    .HOne {
+        padding-bottom: 10px;
+        font-size: 38px;
     }
 }
