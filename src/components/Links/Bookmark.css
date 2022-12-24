@@ -1,11 +1,15 @@
 .Bookmark {
+    width: 36vw;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
 .BookmarkLink {
+    word-wrap: break-word;
+    max-width: 26vw;
     color: var(--color-4);
     margin: 0px 10px;
     padding: 5px;
@@ -31,4 +35,9 @@
     .Bookmark {
         font-size: 20px;
     }
+
+    .BookmarkLink {
+        max-width: 80vw;
+        width: 80vw;
     }
+}
