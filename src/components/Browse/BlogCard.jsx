@@ -1,11 +1,11 @@
 import styles from './BlogCard.css';
 
 export default function BlogCard({ blog }) {
-  const { id, title, createdAt, tags, image_url, content } = blog;
+  const { id, title, createdAt, tags, imageURL, content } = blog;
 
   return (
     <div className={styles.BlogCard}>
-      <img className={styles.BlogCardImg} src={image_url} alt={title} />
+      <img className={styles.BlogCardImg} src={imageURL} alt={title} />
       <div className={styles.BlogCardText}>
         <h2 className={styles.BlogCardHTwo}>{title}</h2>
         <div className={styles.BlogTagDate}>

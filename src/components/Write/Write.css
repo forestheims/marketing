@@ -30,6 +30,7 @@
 }
 
 .Write input[type='text']:hover {
+    color: aliceblue;
 }
 
 .Write textarea {
