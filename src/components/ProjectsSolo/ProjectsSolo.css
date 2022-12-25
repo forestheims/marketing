@@ -1,0 +1,49 @@
+.ProjectsSolo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    width: stretch;
+    margin:20px;
+    padding: 20px;
+    background-color: #606060;
+}
+
+.SoloHTwo {
+    color: aliceblue;
+}
+
+.Card {
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+    padding: 20px;
+    background-color: #454545;
+    width: stretch;
+}
+
+.Card:hover {
+    background-color: #545454;
+    border-radius: 5px;
+}
+
+.CardTitle {
+    color: var(--color-5);
+}
+
+.CardDescription {
+    color: var(--color-6);
+}
+
+.CardImg {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .ProjectsSolo {
+        width: 90vw;
+    }
+
+  }
