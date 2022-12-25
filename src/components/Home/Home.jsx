@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom';
-import Browse from '../Blog/Browse/Browse';
+import Browse from '../Browse/Browse';
 import Links from '../Links/Links';
 import styles from './Home.css';
-import Read from '../Blog/Read/Read';
+import Read from '../Read/Read';
 // import { useEffect } from 'react';
 
 export default function Home() {

@@ -69,6 +69,7 @@ export default function () {
           <BlogCard key={blog.id} blog={blog} />
         ))}
       </div>
+      <div></div>
     </div>
   );
 }

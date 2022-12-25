@@ -1,3 +1,7 @@
+.Container {
+    display: flex;
+}
+
 .Write {
     display: flex;
     flex-direction: column;
