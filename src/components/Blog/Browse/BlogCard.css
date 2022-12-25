@@ -1,0 +1,90 @@
+.BlogCard {
+    height: 200px;
+    width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    margin: 20px;
+    margin-right: 40px;
+    display: flex;
+    background-color: #202020;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.BlogCard:hover, .BlogCard:hover .BlogCardContent {
+    background-color: #333;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.BlogCardText {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 75%;
+    gap: 5px;
+}
+
+.BlogCardHTwo {
+    font-size: 28px;
+    color: var(--color-1);
+    /* offset: 20px; */
+}
+
+.BlogTagDate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: fit-content;
+    gap: 5px;
+}
+
+.BlogCardDate {
+    font-size: 18px;
+    color: var(--color-3);
+}
+
+.BlogCardImg {
+    float: left;
+    width: 150px;
+}
+
+.BlogCardTag {
+    align-self: flex-end;
+    color: var(--color-6);
+    background-color: var(--paragraph);
+    width:fit-content;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.BlogCardContent {
+    color: var(--paragraph);
+    line-height: 24px;
+    padding: 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1207px) {
+    .BlogCardText {
+        flex-direction: column;
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .BlogCardText {
+        width:60%;
+    }
+}
+@media screen and (max-width: 539px) {
+    .BlogCardText {
+        width:50%;
+    }
+}

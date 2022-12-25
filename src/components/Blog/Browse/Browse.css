@@ -1,7 +1,81 @@
 .Browse {
-    display: flex;
+    background-color: var(--paragraph-background);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 61.8vw;
+      height: 80vh;
+      margin: 20px;
+      padding: 20px;
+  }
+
+  .BlogsScroll {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+  }
+  .BlogsScroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #333;
+	border-radius: 10px;
 }
 
-.BlogCard {
-
+.BlogsScroll::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: var(--paragraph-background);
 }
+
+.BlogsScroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(top,
+											  #8cabb8 0%,
+											  #578799 50%,
+											  #528497 51%,
+											  #235a74 100%);
+}
+  
+  .BrowseHTwo {
+      color: aliceblue;
+  }
+  
+  .Paragraph {
+      text-indent: 60px;
+      padding: 10px 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: var(--paragraph);
+      letter-spacing: 1px;
+      width: 100%;
+  }
+  
+  .BrowseLink {
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--color-4);
+      padding: 3px;
+  }
+  
+  .BrowseLink:hover {
+    background-color: #333;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+      .Browse {
+        width: stretch;
+        margin: 20px;
+      }
+      .BrowseHTwo {
+        font-size: 20px;
+      }
+      .Paragraph {
+        font-size: 20px;
+    }
+  }
