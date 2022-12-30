@@ -6,6 +6,32 @@ body {
     overflow-x: hidden;
 }
 
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #333;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar
+{
+    background-image: -webkit-linear-gradient(top,
+        var(--header) 0%,
+        #111 100%);
+	width: 14px;
+    border-radius: 100%;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(top,
+											  #39697c 0%,
+											  #235a74 100%);
+}
+  
+
 .Layout {
     width: 100%;
     display: flex;
