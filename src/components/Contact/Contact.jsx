@@ -3,7 +3,7 @@ import linkedInLogo from '../../../public/images/LI-In-Bug.png';
 import gitHubLogo from '../../../public/images/GitHub-Mark-Light-64px.png';
 import pdfPng from '../../../public/images/pdf.png';
 import emailPng from '../../../public/images/email.png';
-import resumeDisco from '../../../public/resume/resume-disco.mp4';
+import resumeDisco from '../../../public/resume/2023-resume.mp4';
 import { motion } from 'framer-motion';
 import useForm from '../../hooks/useForm';
 import { useEffect, useState } from 'react';
@@ -57,7 +57,7 @@ export default function Contact() {
           }}
         />
       )}
-      <a href="/resume/dark-mode-resume.pdf" target="_blank">
+      <a href="/resume/2023-resume.pdf" target="_blank">
         <img src={pdfPng} alt="pdf symbol" />
         View / Download my Resume
       </a>
