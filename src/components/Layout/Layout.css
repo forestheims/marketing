@@ -3,7 +3,34 @@ body {
     height: 100vh;
     width: 100vw;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
 }
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #333;
+	border-radius: 10px;
+}
+
+body::-webkit-scrollbar
+{
+    background-image: -webkit-linear-gradient(top,
+        var(--header) 0%,
+        #111 100%);
+	width: 14px;
+    border-radius: 100%;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(top,
+											  #39697c 0%,
+											  #235a74 100%);
+}
+  
 
 .Layout {
     width: 100%;
@@ -52,20 +79,20 @@ body {
 }
 
 .Main {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     width: 100%;
-    overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     pointer-events: auto;
-    overflow-x: hidden;
+    height: stretch;
 }
 
 .Footer {
     width: 100vw;
-    position: fixed;
-    margin: 20px;
+    height: 0px;
 }
 
 @media screen and (max-width: 768px) {

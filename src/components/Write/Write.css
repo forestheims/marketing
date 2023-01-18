@@ -1,3 +1,7 @@
+.Container {
+    display: flex;
+}
+
 .Write {
     display: flex;
     flex-direction: column;
@@ -26,6 +30,7 @@
 }
 
 .Write input[type='text']:hover {
+    color: aliceblue;
 }
 
 .Write textarea {
