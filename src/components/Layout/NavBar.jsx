@@ -1,10 +1,24 @@
-import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
 import styles from './Layout.css';
 
 export default function NavBar() {
+  const location = useLocation();
+  const [title, setTitle] = useState('Blog');
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setTitle('Blog');
+    } else {
+      const temp = location.pathname.replace('/', '');
+      setTitle(temp.charAt(0).toUpperCase() + temp.slice(1));
+    }
+  }, [location.pathname]);
+
+  console.log('location', location.pathname.replace('/', '').ca);
   return (
     <header className={styles.Header}>
-      <h1 className={styles.HOne}>Forest Heims</h1>
+      <h1 className={styles.HOne}>Forest (Fora) Heims | {title}</h1>
 
       <div className={styles.Links}>
         <NavLink className={styles.Link} to="">
@@ -16,7 +30,7 @@ export default function NavBar() {
         <NavLink className={styles.Link} to="projects">
           Projects
         </NavLink>
-        <NavLink className={styles.Link} to="contact" text="Contact">
+        <NavLink className={styles.Link} to="contact">
           Contact
         </NavLink>
       </div>
