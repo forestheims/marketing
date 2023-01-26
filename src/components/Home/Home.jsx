@@ -3,6 +3,7 @@ import Browse from '../Browse/Browse';
 import Links from '../Links/Links';
 import styles from './Home.css';
 import Read from '../Read/Read';
+import Games from '../Games/Games';
 // import { useEffect } from 'react';
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
   return (
     <div className={styles.Home}>
       {!!params.blogId ? <Read /> : <Browse />}
+      {/* <Games /> */}
       <Links />
     </div>
   );
