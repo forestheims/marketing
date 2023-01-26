@@ -27,6 +27,9 @@ export default function NavBar() {
         <NavLink className={styles.Link} to="about">
           About
         </NavLink>
+        <NavLink className={styles.Link} to="games">
+          Games
+        </NavLink>
         <NavLink className={styles.Link} to="projects">
           Projects
         </NavLink>

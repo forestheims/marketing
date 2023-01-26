@@ -1,0 +1,85 @@
+.Games {
+    background-color: #111;
+    padding: 20px;
+    margin: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.Game {
+    background-color: #333;
+    padding: 20px;
+    width: fit-content;
+}
+
+.HTwo {
+    color: aliceblue;
+}
+
+.HThree {
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.Iframe {
+    height: 642px;
+    width: 960px;
+}
+
+.Blank {
+    height: 642px;
+    width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.GameSelector {
+    width: 960px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.Button {
+    color: var(--color-0);
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color:var(--color-1);
+    padding: 20px 40px;
+    border: 1px solid #111;
+    border-radius: 9px;
+    cursor:pointer;
+}
+
+.Button:hover {
+    border: 1px solid aliceblue;
+}
+
+.StopInactive {
+    display: none;
+    color: var(--color-7);
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color:var(--color-0);
+    padding: 20px 40px;
+    border: 1px solid #111;
+    border-radius: 9px;
+    cursor:pointer;
+}
+
+.StopActive {
+    color: var(--color-0);
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #ca1c1c;
+    padding: 20px 40px;
+    border: 1px solid #111;
+    border-radius: 9px;
+    cursor:pointer;
+}
+
+.StopActive:hover {
+    border: 1px solid aliceblue;
+}

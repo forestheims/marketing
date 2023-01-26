@@ -7,6 +7,7 @@ import Write from './components/Write/Write';
 import Projects from './components/Projects/Projects';
 import AboutPage from './components/AboutPage/AboutPage';
 import Home from './components/Home/Home';
+import Games from './components/Games/Games';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="write" element={<Write />} />
+          <Route path="games" element={<Games />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
           <Route path=":blogId" element={<Home />} />

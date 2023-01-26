@@ -9,6 +9,8 @@ export default function TechStack() {
     'node',
     'react',
     'postgresql',
+    'csharp',
+    'unity',
   ]);
   return (
     <div className={styles.TechStack}>
