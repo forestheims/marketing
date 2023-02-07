@@ -18,7 +18,7 @@ export default function NavBar() {
   console.log('location', location.pathname.replace('/', '').ca);
   return (
     <header className={styles.Header}>
-      <h1 className={styles.HOne}>Forest (Fora) Heims | {title}</h1>
+      <h1 className={styles.HOne}>Forest Heims | {title}</h1>
 
       <div className={styles.Links}>
         <NavLink className={styles.Link} to="">
