@@ -26,7 +26,7 @@ export default function Home() {
     <div className={styles.Home}>
       {!!params.blogId ? <Read /> : <Browse />}
       {/* <Games /> */}
-      <Links />
+      {/* <Links /> */}
     </div>
   );
 }
