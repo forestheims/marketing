@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <div className={styles.Projects}>
       <ProjectsColab />
-      <ProjectsSolo />
+      {/* <ProjectsSolo /> */}
     </div>
   );
 }

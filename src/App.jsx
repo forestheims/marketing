@@ -14,13 +14,13 @@ export default function App() {
     <Router>
       <Routes>
         <Route element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<AboutPage />} />
+          <Route index element={<AboutPage />} />
+          <Route path="blog" element={<Home />} />
           <Route path="write" element={<Write />} />
           <Route path="games" element={<Games />} />
           <Route path="projects" element={<Projects />} />
           <Route path="contact" element={<Contact />} />
-          <Route path=":blogId" element={<Home />} />
+          <Route path="blog/:blogId" element={<Home />} />
         </Route>
       </Routes>
     </Router>

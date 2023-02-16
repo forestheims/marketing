@@ -8,14 +8,13 @@ export default function NavBar() {
 
   useEffect(() => {
     if (location.pathname === '/') {
-      setTitle('Blog');
+      setTitle('');
     } else {
       const temp = location.pathname.replace('/', '');
       setTitle(temp.charAt(0).toUpperCase() + temp.slice(1));
     }
   }, [location.pathname]);
 
-  console.log('location', location.pathname.replace('/', '').ca);
   return (
     <header className={styles.Header}>
       <h1 className={styles.HOne}>Forest Heims | {title}</h1>
@@ -24,12 +23,12 @@ export default function NavBar() {
         <NavLink className={styles.Link} to="">
           Home
         </NavLink>
-        <NavLink className={styles.Link} to="about">
-          About
+        <NavLink className={styles.Link} to="blog">
+          Blog
         </NavLink>
-        <NavLink className={styles.Link} to="games">
+        {/* <NavLink className={styles.Link} to="games">
           Games
-        </NavLink>
+        </NavLink> */}
         <NavLink className={styles.Link} to="projects">
           Projects
         </NavLink>
