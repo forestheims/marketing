@@ -20,7 +20,7 @@ export default function About() {
         </p>
         <p className={styles.Paragraph}>
           My hobbies include hiking, juggling, rollerskating, and printmaking.
-          Essential Oil and Hydrosol distillation is an process I am also fond
+          Essential Oil and Hydrosol distillation is a process I am also fond
           of.
         </p>
       </article>

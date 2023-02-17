@@ -12,13 +12,13 @@ export default function NavBar() {
     } else {
       const temp = location.pathname.split('/')[1];
       console.log('temp :>> ', temp);
-      setTitle(temp.charAt(0).toUpperCase() + temp.slice(1));
+      setTitle(' | ' + temp.charAt(0).toUpperCase() + temp.slice(1));
     }
   }, [location.pathname]);
 
   return (
     <header className={styles.Header}>
-      <h1 className={styles.HOne}>Forest Heims | {title}</h1>
+      <h1 className={styles.HOne}>Forest Heims{title}</h1>
 
       <div className={styles.Links}>
         <NavLink className={styles.Link} to="">

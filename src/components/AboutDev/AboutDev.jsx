@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import TechStack from '../TechStack/TechStack';
 import styles from './AboutDev.css';
 
@@ -13,14 +12,13 @@ export default function About() {
           I am a thoughtful software engineer confident and competent in
           planning, building and deploying full stack applications using the
           PERN stack (PostgreSQL, Express, React, Node). I am versed in and
-          enjoy the creativity and psychology aspects of UX/UI Design as well
+          enjoy the creativity and psychology aspects of UX/UI Design,
           systematic Test Driven Development writing, updating and debugging
           RESTful API's.
         </p>
         <p className={styles.Paragraph}>
           Lately I've been finding inspiration by getting into game development,
           learning Unity, C#, and Blender.
-          {/* Creatively using code to express non-material and abstract ideas interests me. */}
         </p>
         <br />
         <h2 className={styles.AboutHTwo}>Tech Stack</h2>
