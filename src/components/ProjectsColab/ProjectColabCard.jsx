@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styles from './ProjectsColab.css';
 
 export default function Project({ project }) {
