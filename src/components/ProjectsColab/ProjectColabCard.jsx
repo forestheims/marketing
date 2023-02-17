@@ -5,21 +5,20 @@ export default function Project({ project }) {
   return (
     <div className={styles.SpanContainer}>
       <div className={styles.Project}>
-        <h2 className={styles.ProjectTitle}>{title}</h2>
+        <div className={styles.ProjectLinks}>
+          <a className={styles.ProjectLink} href={link} target="_blank">
+            <h2 className={styles.ProjectTitle}>{title}</h2>
+          </a>
+          <a className={styles.ProjectLink} href={github} target="_blank">
+            GitHub Repo
+          </a>
+        </div>
         <p className={styles.ProjectDescription}>{description}</p>
         <ul className={styles.ProjectTechStack}>
           {tags.map((tag) => (
             <li key={tag}>{tag}</li>
           ))}
         </ul>
-        <div className={styles.ProjectLinks}>
-          <a className={styles.ProjectLink} href={link} target="_blank">
-            Deployed Site
-          </a>
-          <a className={styles.ProjectLink} href={github} target="_blank">
-            GitHub Repo
-          </a>
-        </div>
         <p>Developers:</p>
         <ul className={styles.ProjectDevelopers}>
           {coDevelopers.map((dev) => (
