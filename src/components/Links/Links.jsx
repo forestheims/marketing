@@ -5,6 +5,7 @@ import styles from './Links.css';
 
 export default function Links() {
   const [links, setLinks] = useState([]);
+  const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState('All');
   const [tags, setTags] = useState(['All']);
 
@@ -13,6 +14,7 @@ export default function Links() {
       try {
         const stuff = await getLinks();
         setLinks(stuff);
+        setLoading(false);
       } catch (error) {
         console.log(error);
         setLinks([]);
@@ -35,36 +37,47 @@ export default function Links() {
 
   return (
     <div className={styles.Links}>
-      <h2 className={styles.LinksHTwo}>Some of my Bookmarks</h2>
-      <label htmlFor="filter" className={styles.FilterLabel}>
-        Filter By Tag:
-        <select
-          name="filter"
-          className={styles.FilterInput}
-          value={filter}
-          onChange={(e) => setFilter(e.target.value)}
-        >
-          {tags.map((tag) => {
-            return (
-              <option value={tag} key={tag}>
-                {tag}
-              </option>
-            );
-          })}
-        </select>
-      </label>
-      <div className={styles.ScrollContainer}>
-        {links.map((link) => {
-          return (
-            <Bookmark
-              link={link}
-              key={link.id}
-              filter={filter}
-              setFilter={setFilter}
-            />
-          );
-        })}
-      </div>
+      <h2 className={styles.LinksHTwo}>Public Bookmarks</h2>
+      {loading ? (
+        <img
+          className={styles.LinksImg}
+          width="100px"
+          src={'./images/loading/fox-gif.gif'}
+          alt="loading bookmarks"
+        />
+      ) : (
+        <>
+          <label htmlFor="filter" className={styles.FilterLabel}>
+            Filter By Tag:
+            <select
+              name="filter"
+              className={styles.FilterInput}
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+            >
+              {tags.map((tag) => {
+                return (
+                  <option value={tag} key={tag}>
+                    {tag}
+                  </option>
+                );
+              })}
+            </select>
+          </label>
+          <div className={styles.ScrollContainer}>
+            {links.map((link) => {
+              return (
+                <Bookmark
+                  link={link}
+                  key={link.id}
+                  filter={filter}
+                  setFilter={setFilter}
+                />
+              );
+            })}
+          </div>
+        </>
+      )}
     </div>
   );
 }
