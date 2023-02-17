@@ -10,7 +10,8 @@ export default function NavBar() {
     if (location.pathname === '/') {
       setTitle('');
     } else {
-      const temp = location.pathname.replace('/', '');
+      const temp = location.pathname.split('/')[1];
+      console.log('temp :>> ', temp);
       setTitle(temp.charAt(0).toUpperCase() + temp.slice(1));
     }
   }, [location.pathname]);
