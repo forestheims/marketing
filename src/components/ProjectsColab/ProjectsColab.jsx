@@ -17,7 +17,8 @@ export default function ProjectsColab() {
             'Forest Heims',
           ],
           img: '/images/projects/geo-tone.PNG',
-          description: 'Social synthesizer app',
+          description:
+            'Geo Tone is a full-stack browser-based audio sequencer built using React, Reactronica (from Tone.js), CSS3, Framer Motion, PostgreSQL and Express. Geo Tone exists to make music fun - letting new-to-synth users experiment with customized audio effects. On the frontend, user data is hashed and encrypted; on the backend, data is managed in SQL.',
           tags: [
             'PostgreSQL',
             'Express.js',
@@ -40,7 +41,8 @@ export default function ProjectsColab() {
             'Forest Heims',
           ],
           img: '/images/projects/pixl.PNG',
-          description: 'Pixel art editor',
+          description:
+            'PIXL is an application that allows the user to select grid section and modify its color to create a piece of pixel art. Users are able to save and display their artwork on a gallery page via local storage.',
           tags: ['HTML', 'CSS', 'JavaScript'],
           title: 'PIXL',
         }}
