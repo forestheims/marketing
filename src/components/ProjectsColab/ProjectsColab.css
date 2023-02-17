@@ -88,15 +88,17 @@
 
 .ProjectLinks {
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+    width: 400px;
 }
 
 .ProjectLink {
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 17px;
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
-    border: #414141 solid 2px;
+    /* border: #414141 solid 2px; */
     color: var(--color-4);
 }
 
@@ -105,7 +107,10 @@
 }
 
 .ProjectDescription {
+    text-indent: 40px;;
     font-size: 17px;
+    width: 400px;
+    line-height: 22px;
 }
 .ProjectTitle {
     font-size: 27px;
