@@ -46,6 +46,10 @@
         padding-bottom: 20px;
     }
 
+.LinksImg {
+    align-self: center;
+}
+
 .FilterInput {
 background-color: var(--paragraph);
 color: aliceblue;

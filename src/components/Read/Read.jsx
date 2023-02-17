@@ -5,13 +5,12 @@ import styles from './Read.css';
 export default function Random() {
   const { blogId } = useParams();
   const [blog, setBlog] = useState({
-    id: '',
-    title: 'wrods',
-    createdAt: '',
-    tags: ['this', 'that', 'the'],
-    image_url: '',
-    content:
-      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \n\n "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+    id: '1',
+    title: 'Blog currently under development. Check back soon!',
+    createdAt: '2/17/2023',
+    tags: [''],
+    image_url: '../images/loading/fox-gif.gif',
+    content: '',
   });
 
   useEffect(() => {
