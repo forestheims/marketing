@@ -26,6 +26,17 @@
     width: 100%;
 }
 
+.List {
+    /* text-indent: 60px; */
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--paragraph);
+    letter-spacing: 1px;
+    width: 100%;
+}
+
 .AboutLink {
     font-weight: 400;
     font-size: 16px;
@@ -47,6 +58,10 @@
     font-size: 20px;
   }
   .Paragraph {
+    font-size: 20px;
+  }
+  
+  .List {
     font-size: 20px;
 }
 
