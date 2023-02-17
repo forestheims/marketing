@@ -147,7 +147,10 @@
         width: stretch;
     }
     .ProjectImg {
-      width: stretch;
+        width: stretch;
+    }
+    .ProjectDescription {
+        width: stretch;
     }
     .ProjectDevelopers {
         gap: 20px;
