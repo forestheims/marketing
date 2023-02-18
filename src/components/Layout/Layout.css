@@ -88,12 +88,11 @@ body::-webkit-scrollbar-thumb
     justify-content: flex-start;
     align-items: flex-start;
     pointer-events: auto;
-    height: stretch;
+    height: fit-content;
 }
 
 .Footer {
     width: 100vw;
-    height: 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -114,6 +113,6 @@ body::-webkit-scrollbar-thumb
 
     .HOne {
         padding-bottom: 10px;
-        font-size: 38px;
+        font-size: 24px;
     }
 }
