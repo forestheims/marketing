@@ -1,7 +1,7 @@
 .BlogCard {
     height: 200px;
     width: 95%;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-overflow: ellipsis;
     padding: 20px;
     margin: 20px;
@@ -11,7 +11,8 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 5px;
+    gap: px;
+    z-index: 1;
 }
 
 .BlogCard:hover, .BlogCard:hover .BlogCardContent {
@@ -21,14 +22,14 @@
     cursor: pointer;
 }
 
-.BlogCardText {
+/* .BlogCardText {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 75%;
     gap: 5px;
-}
+} */
 
 .BlogCardHTwo {
     font-size: 28px;
@@ -71,7 +72,17 @@
     text-align: justify;
 }
 
-@media screen and (max-width: 1207px) {
+.BlogCardLink {
+    z-index: 2;
+    /* color: var(--paragraph); */
+    line-height: 24px;
+    padding: 20px;
+    text-align: justify;
+    width: stretch;
+    word-break: break-all;
+}
+
+/* @media screen and (max-width: 1207px) {
     .BlogCardText {
         flex-direction: column;
         width:50%;
@@ -82,9 +93,38 @@
     .BlogCardText {
         width:60%;
     }
-}
-@media screen and (max-width: 539px) {
-    .BlogCardText {
-        width:50%;
+} */
+/* @media screen and (max-width: 539px) { */
+    .BlogCard {
+        width: stretch;
+        flex-direction: column;
+        gap: 0px;
+        height: fit-content;
     }
-}
+
+    .BlogCardHTwo {
+        margin: 5px;
+    }
+
+    .BlogTagDate {
+        width: stretch;
+        margin: 10px;
+        align-items: flex-start;
+
+    }
+
+    .BlogCardContent {
+        padding: 5px;
+    }
+
+    .BlogCardTag {
+        align-self: flex-start;
+        width:fit-content;
+    }
+
+    .BlogCardImg {
+        /* width: 64%; */
+        /* justify-self: flex-end; */
+        height: min-content;
+    }
+/* } */

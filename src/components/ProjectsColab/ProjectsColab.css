@@ -5,6 +5,7 @@
     flex-direction: column;
     gap: 10px;
     background-color: var(--paragraph-background);
+    overflow-x: hidden;
 }
 
 .ProjectsTitle {
@@ -24,61 +25,6 @@
     padding: 20px;
     gap: 10px;
 }
-
-.SpanContainer {
-    display: block;
-    box-sizing: border-box;
-    width:fit-content;
-    height: fit-content;
-}
-
-.Span{
-    /* position: absolute; */
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     display: block;
-     box-sizing: border-box;
- }
- .Span:nth-child(1){
-     transform: rotate(0deg);
- }
- .Span:nth-child(2){
-     transform: rotate(90deg);
- }
- .Span:nth-child(3){
-     transform: rotate(180deg);
- }
- .Span:nth-child(4){
-     transform: rotate(270deg);
- }
- .Span:before{
-     content: '';
-     position: absolute;
-     width: 100%;
-     height: 2px;
-     background: #0093ff;
-     animation: animate 4s linear infinite;
- }
- @keyframes animate{
-     0%{
-         transform: scaleX(0);
-         transform-origin: left;
-     }
-     33.3%{
-         transform: scaleX(.5);
-         transform-origin: right;
-     }
-     /* 66.6%{
-         transform: scaleX(.5);
-         transform-origin: left;
-     } */
-     100%{
-         transform: scaleX(0);
-         transform-origin: right;
-     }
- }
 
 .ProjectImg {
     width: 400px;
@@ -114,14 +60,15 @@
 }
 .ProjectTitle {
     font-size: 27px;
-    color: #4e36eb;
+    color: var(--color-2);
     font-weight: 600;
 }
 .ProjectTechStack {
     display: flex;
     font-size: 14px;
+    font-weight: 500;
     gap: 10px;
-    color: #8371fc;
+    color: var(--color-1);
 }
 
 .ProjectDevelopers {
@@ -134,16 +81,19 @@
     text-indent: -20px;
     padding-left: 20px;
     font-size: 14px;
-    color: #8371fc;
+    /* color: #350322; */
+    color: var(--color-2);
+    font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
     .Projects {
-        width: 90vw;
+        width: stretch;
     }
 
     
     .Project {
+        margin: 5px;
         width: stretch;
     }
     .ProjectImg {
@@ -153,10 +103,10 @@
         width: stretch;
     }
     .ProjectDevelopers {
-        gap: 20px;
+        gap: 10px;
         flex-wrap: wrap;
         width: stretch;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .ProjectDeveloperLink {
         margin: 10px;
@@ -170,12 +120,11 @@
         width: 200px;
         font-size: 16px;
         gap: 10px;
-        color: slateblue;
     }
     .ProjectLinks {
         flex-direction: column;
-        gap: 10px;
+        /* gap: 10px;
         margin-left: 20px;
-        align-items: flex-start;
+        align-items: flex-start; */
     }
   }

@@ -5,20 +5,15 @@ export default function Project({ project }) {
   return (
     <div className={styles.SpanContainer}>
       <div className={styles.Project}>
+        <a className={styles.ProjectLink} href={link} target="_blank">
+          <h2 className={styles.ProjectTitle}>{title}</h2>
+        </a>
+        <img className={styles.ProjectImg} src={img} />
         <div className={styles.ProjectLinks}>
-          <a className={styles.ProjectLink} href={link} target="_blank">
-            <h2 className={styles.ProjectTitle}>{title}</h2>
-          </a>
           <a className={styles.ProjectLink} href={github} target="_blank">
             GitHub Repo
           </a>
         </div>
-        <p className={styles.ProjectDescription}>{description}</p>
-        <ul className={styles.ProjectTechStack}>
-          {tags.map((tag) => (
-            <li key={tag}>{tag}</li>
-          ))}
-        </ul>
         <p>Developers:</p>
         <ul className={styles.ProjectDevelopers}>
           {coDevelopers.map((dev) => (
@@ -27,7 +22,12 @@ export default function Project({ project }) {
             </li>
           ))}
         </ul>
-        <img className={styles.ProjectImg} src={img} />
+        <p className={styles.ProjectDescription}>{description}</p>
+        <ul className={styles.ProjectTechStack}>
+          {tags.map((tag) => (
+            <li key={tag}>{tag}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
