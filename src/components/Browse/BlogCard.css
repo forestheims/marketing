@@ -1,7 +1,7 @@
 .BlogCard {
     height: 200px;
     width: 95%;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-overflow: ellipsis;
     padding: 20px;
     margin: 20px;
@@ -71,7 +71,7 @@
     text-align: justify;
 }
 
-@media screen and (max-width: 1207px) {
+/* @media screen and (max-width: 1207px) {
     .BlogCardText {
         flex-direction: column;
         width:50%;
@@ -82,9 +82,37 @@
     .BlogCardText {
         width:60%;
     }
-}
+} */
 @media screen and (max-width: 539px) {
-    .BlogCardText {
-        width:50%;
+    .BlogCard {
+        width: stretch;
+        flex-direction: column;
+        gap: 0px;
+        height: fit-content;
+    }
+
+    .BlogCardHTwo {
+        margin: 5px;
+    }
+
+    .BlogTagDate {
+        width: stretch;
+        margin: 10px;
+        align-items: flex-start;
+
+    }
+
+    .BlogCardContent {
+        padding: 5px;
+    }
+
+    .BlogCardTag {
+        align-self: flex-start;
+    }
+
+    .BlogCardImg {
+        width: 64%;
+        justify-self: flex-end;
+        height: min-content;
     }
 }

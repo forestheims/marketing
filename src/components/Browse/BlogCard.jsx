@@ -9,16 +9,16 @@ export default function BlogCard({ blog }) {
   return (
     <div className={styles.BlogCard} onClick={() => navigate(`/blog/${id}`)}>
       <img className={styles.BlogCardImg} src={imageURL} alt={title} />
-      <div className={styles.BlogCardText}>
-        <h2 className={styles.BlogCardHTwo}>{title}</h2>
-        <div className={styles.BlogTagDate}>
-          <span className={styles.BlogCardDate}>{createdAt}</span>
-          <span className={styles.BlogCardTag}>{tags[0]}</span>
-        </div>
-        {splitContent.map((p) => (
-          <p className={styles.BlogCardContent}>{p}</p>
-        ))}
+      {/* <div className={styles.BlogCardText}> */}
+      <h2 className={styles.BlogCardHTwo}>{title}</h2>
+      <div className={styles.BlogTagDate}>
+        <span className={styles.BlogCardDate}>{createdAt}</span>
+        <span className={styles.BlogCardTag}>{tags[0]}</span>
       </div>
+      {splitContent.map((p) => (
+        <p className={styles.BlogCardContent}>{p}</p>
+      ))}
+      {/* </div> */}
     </div>
   );
 }
