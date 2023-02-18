@@ -9,16 +9,20 @@ export default function About() {
         <h2 className={styles.AboutHTwo}>Tech Experience</h2>
         <TechStack />
         <p className={styles.Paragraph}>
-          I am a thoughtful software engineer confident and competent in
-          planning, building and deploying full stack applications using the
-          PERN stack (PostgreSQL, Express, React, Node). I am versed in and
-          enjoy the creativity and psychology aspects of UX/UI Design,
-          systematic Test Driven Development writing, updating and debugging
-          RESTful API's.
+          I am a detail-oriented software engineer with expertise in planning,
+          building, and deploying full-stack applications using the PERN stack
+          (PostgreSQL, Express, React, Node). I have a deep understanding of
+          UX/UI design and enjoy the creative and psychological aspects of this
+          field. I am also well-versed in systematic Test Driven Development
+          (TDD) and have experience in writing, updating, and debugging RESTful
+          APIs.
         </p>
         <p className={styles.Paragraph}>
-          Lately I've been finding inspiration by getting into game development,
-          learning Unity, C#, and Blender.
+          Recently, I have been exploring the exciting world of game
+          development, where I have been learning Unity, C#, and Blender. I find
+          game development to be a great source of inspiration, and I enjoy
+          using my skills to create engaging and immersive experiences for
+          users.
         </p>
         <br />
         <h2 className={styles.AboutHTwo}>Tech Stack</h2>
