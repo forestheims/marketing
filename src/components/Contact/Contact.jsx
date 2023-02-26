@@ -3,28 +3,27 @@ import linkedInLogo from '../../../public/images/LI-In-Bug.png';
 import gitHubLogo from '../../../public/images/GitHub-Mark-Light-64px.png';
 import pdfPng from '../../../public/images/pdf.png';
 import emailPng from '../../../public/images/email.png';
-import resumeDisco from '../../../public/resume/2023-resume.mp4';
 import { motion } from 'framer-motion';
 import useForm from '../../hooks/useForm';
 import { useEffect, useState } from 'react';
 
 export default function Contact() {
-  const [beenHere, setBeenHere] = useState('has not been here');
+  // const [beenHere, setBeenHere] = useState('has not been here');
 
-  useEffect(() => {
-    const setReturn = () => {
-      const hasBeenHere = localStorage.getItem('HASBEENHERE');
-      if (hasBeenHere === 'has been here') {
-        setBeenHere(hasBeenHere);
-      } else {
-        setTimeout(
-          () => void localStorage.setItem('HASBEENHERE', 'has been here'),
-          6000
-        );
-      }
-    };
-    setReturn();
-  }, []);
+  // useEffect(() => {
+  //   const setReturn = () => {
+  //     const hasBeenHere = localStorage.getItem('HASBEENHERE');
+  //     if (hasBeenHere === 'has been here') {
+  //       setBeenHere(hasBeenHere);
+  //     } else {
+  //       setTimeout(
+  //         () => void localStorage.setItem('HASBEENHERE', 'has been here'),
+  //         6000
+  //       );
+  //     }
+  //   };
+  //   setReturn();
+  // }, []);
 
   // const { formState, formError, handleFormChange, setFormError } = useForm({
   //   email: '',
@@ -38,7 +37,7 @@ export default function Contact() {
 
   return (
     <div className={styles.Contact}>
-      {beenHere === 'has not been here' && (
+      {/* {beenHere === 'has not been here' && (
         <motion.iframe
           className={styles.changingPdf}
           src={resumeDisco}
@@ -56,8 +55,8 @@ export default function Contact() {
             duration: 5,
           }}
         />
-      )}
-      <a href="/resume/2023-resume.pdf" target="_blank">
+      )} */}
+      <a href="/resume/2023-resume-2.pdf" target="_blank">
         <img src={pdfPng} alt="pdf symbol" />
         View / Download my Resume
       </a>
