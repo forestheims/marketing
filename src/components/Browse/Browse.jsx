@@ -5,6 +5,14 @@ import styles from './Browse.css';
 export default function () {
   const [blogs, setBlogs] = useState([
     {
+      id: '5',
+      title: 'I plan on setting up a TIL "journal" soon',
+      createdAt: '2/27/2023',
+      tags: ['Web Learning Log'],
+      imageURL: 'https://randomfox.ca/images/48.jpg',
+      content: 'Write it down, move forward, recount',
+    },
+    {
       id: '8',
       title: 'The Library of Babel',
       createdAt: '2/18/2023',
@@ -21,15 +29,6 @@ export default function () {
       tags: ['software engineering', 'computer science'],
       imageURL: 'https://randomfox.ca/images/76.jpg',
       content: 'Personal ponderings of the evolving digital human interfaces.',
-    },
-    {
-      id: '5',
-      title: 'Alopecia Areata',
-      createdAt: '2/17/2023',
-      tags: ['autoimmune disorders', 'adverse reactions to pharmaceuticals'],
-      imageURL:
-        'https://mlbn0rjvf5og.i.optimole.com/w:450/h:398/q:mauto/f:avif/https://hailstorm-development.com/wp-content/uploads/2021/03/Zoom-Meeting.jpg',
-      content: "The reason you won't find any pictures of me on LinkedIn.",
     },
   ]);
 
