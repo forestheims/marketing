@@ -56,24 +56,24 @@ export default function Contact() {
           }}
         />
       )} */}
-      <a href="/resume/2023-resume-2.pdf" target="_blank">
-        <img src={pdfPng} alt="pdf symbol" />
+      <a href="/resume/2023-resume-2.1.pdf" target="_blank">
+        <img src={pdfPng} alt="pdf download link" />
         View / Download my Resume
       </a>
       <a href="mailto:forestheims@gmail.com" target="_blank">
         <img
           src={emailPng}
-          alt="email symbol"
+          alt="email me link"
           // style={{ filter: 'invert(1)' }}
         />
         forestheims@gmail.com
       </a>
       <a href="https://github.com/forestheims" target="_blank">
-        <img src={gitHubLogo} alt="github logo" />
+        <img src={gitHubLogo} alt="link to my github profile" />
         github.com/forestheims
       </a>
       <a href="https://www.linkedin.com/in/forestheims/" target="_blank">
-        <img src={linkedInLogo} alt="linkedin logo" />
+        <img src={linkedInLogo} alt="link to my linkedin profile" />
         linkedin.com/in/forestheims
       </a>
       {/* <form onSubmit={(e) => handleSubmit(e)}>
