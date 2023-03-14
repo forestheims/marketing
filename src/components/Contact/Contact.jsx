@@ -56,7 +56,7 @@ export default function Contact() {
           }}
         />
       )} */}
-      <a href="/resume/2023-resume-2.2.pdf" target="_blank">
+      <a href="/resume/2023-resume-2.3.pdf" target="_blank">
         <img src={pdfPng} alt="pdf download link" />
         View / Download my Resume
       </a>
