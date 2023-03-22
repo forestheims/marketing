@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import styles from './Layout.css';
 
 export default function NavBar() {
@@ -26,9 +26,9 @@ export default function NavBar() {
         <NavLink className={styles.Link} to="">
           Home
         </NavLink>
-        <NavLink className={styles.Link} to="blog">
+        <a className={styles.Link} href="https://forestheims.dev">
           Blog
-        </NavLink>
+        </a>
         {/* <NavLink className={styles.Link} to="games">
           Games
         </NavLink> */}
