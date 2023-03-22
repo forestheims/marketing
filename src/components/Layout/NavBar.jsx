@@ -23,18 +23,18 @@ export default function NavBar() {
       <h1 className={styles.HOne}>Forest Heims{title}</h1>
 
       <div className={styles.Links}>
-        <NavLink className={styles.Link} to="">
+        <a className={styles.Link} href="https://forestheims.net">
           Home
-        </NavLink>
+        </a>
         <a className={styles.Link} href="https://forestheims.dev">
           Blog
         </a>
         <a className={styles.Link} href="https://forestheims.org">
           Projects
         </a>
-        <NavLink className={styles.Link} to="contact">
+        <a className={styles.Link} href="https://forestheims.com">
           Contact
-        </NavLink>
+        </a>
       </div>
     </header>
   );
