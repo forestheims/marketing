@@ -29,12 +29,9 @@ export default function NavBar() {
         <a className={styles.Link} href="https://forestheims.dev">
           Blog
         </a>
-        {/* <NavLink className={styles.Link} to="games">
-          Games
-        </NavLink> */}
-        <NavLink className={styles.Link} to="projects">
+        <a className={styles.Link} href="https://forestheims.org">
           Projects
-        </NavLink>
+        </a>
         <NavLink className={styles.Link} to="contact">
           Contact
         </NavLink>
