@@ -6,10 +6,8 @@ import styles from './AboutPage.css';
 export default function AboutPage() {
   return (
     <div className={styles.AboutPage}>
-      <div>
-        <AboutPerson />
-        <About />
-      </div>
+      <AboutPerson />
+      <About />
       <Links />
     </div>
   );
